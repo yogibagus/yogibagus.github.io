@@ -27,6 +27,17 @@
       font-size: 3.5rem;
     }
   }
+
+  .blinking{
+    animation:blinkingText 0.5s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #ffc107;    }
+    49%{    color: #ffc107; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #ffc107;    }
+}
 </style>
 
 
@@ -56,6 +67,14 @@
               <li><a class="dropdown-item" href="mailto:yogibaguskarunia@gmail.com">Email</a></li>
             </ul>
           </li>
+          <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle id="dropdown02" data-bs-toggle="dropdown" href="#"><strong class="blinking" >#JUAL </strong> <i class="text-warning">Domain, Hosting dan VPS Murah</i></a>
+             <ul class="dropdown-menu" aria-labelledby="dropdown02">
+               <li>
+                 <a class="dropdown-item" href="#"><strong>Contact me for details</strong></a>
+               </li>
+             </ul>
+          </li>
         </ul>
       <!-- <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -66,8 +85,7 @@
 </nav>
 
 <main class="container">
-
-  <div class="starter-template text-center py-5 px-3 mb-2">
+  <div class="starter-template text-center py-3 px-3 mb-2">
     <h1>👨‍🚀 yogibagus</h1>
     <p class="lead">⚔️ junior web developer</p>
     <div class="row mb-2 justify-content-center">
@@ -84,7 +102,9 @@
       <a href="https://deckodev.com/app" class="btn btn-dark just">View on Deckodev</a>
       <a href="https://github.com/yogibagus" class="btn btn-outline-dark just">View on Github</a>
     </div>
+    <marquee class="text-primary mt-3" behavior="scroll" direction="left"><span class="badge bg-danger">#ADS</span> <strong>#JUAL</strong> TLD Domain <strong>60k/tahun</strong>. Unlimited Hosting <strong>50k/tahun</strong>. Satu paket <strong>100k/tahun</strong> | VPS Ram 2gb <strong>50k/bulan</strong> | Contact me for details! <span class="badge bg-danger">#ADS</span></marquee>
   </div>
+
   <hr>
   <h4 class="text-center mb-4">🔨 Recent Work</h4>
   <div class="row justify-content-center">
